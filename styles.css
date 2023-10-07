@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 50;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    font-family: century;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    color:black;
+}
+
+.hero-content h1{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+.hero-content p{
+    margin: 5px;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration:none;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: large;
+}
+
+/* About Section */
+#about{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#pic h1{
+    text-align: center;
+    font-family: century;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#intro h2{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold; 
+    margin-top: 50px;
+}
+
+#intro p{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.myr-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration:none;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: large;
+}
+
+/* Skills section */
+
+.skill {
+    margin-bottom: 20px;
+ 
+    width: 100%;
+   
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+     
+    align-items: center;
+   margin: 0 100px 0 100px;
+   
+   
+}
+
+.skills h2 {
+    font-family: century;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.skill p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    background-color: #f4f4f4;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.skill-level {
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color:black;
+    font-weight: bold;
+}
+
+/* Skill-specific styling */
+.skill .html5 {
+    width: 90%;
+    background-color: #e44d26;
+}
+
+.skill .css3 {
+    width: 80%;
+    background-color: #1572b6;
+}
+
+.skill .javascript {
+    width: 65%;
+    background-color: greenyellow;
+}
+.skill .SQL {
+    width: 75%;
+    background-color:salmon;
+}
+.skill .PHP {
+    width: 65%;
+    background-color: teal;
+}
+
+.projects{
+    display: flex;
+   justify-content: center;
+   margin-top: 70px;
+  
+}
+.project-card {
+    display: flex;
+    width: 84vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.project-image {
+    max-width: 33%;
+    height: 171px;
+    border-radius: 10px;
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.project-description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* contact section */
+/* Add or modify styles for the contact section */
+.contact {
+    background-color: gray;
+    padding: 40px;
+}
+
+.contact h3 {
+    font-size: 30px;
+    font-family: century;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact form {
+    font-size: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.contact label,
+.contact input,
+.contact textarea {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact button:hover {
+    background-color: white;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.icon-container {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border-radius: 50%;
+}
+
+.instagram {
+    background-image: url('pngtree-instagram-icon-png-image_6315974.png');
+}
+
+.linkedin {
+    background-image: url('download\ \(1\).png');
+}
+
+.youtube {
+    background-image: url('download\ \(2\).png');
+}
+.facebook {
+    background-image: url('download\ \(3\).png');
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+}
+
+.text h2{
+    font-family: century;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
